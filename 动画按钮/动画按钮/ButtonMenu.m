@@ -108,6 +108,8 @@
     rotation.values=@[@0,@(M_PI*4)];
     group.duration=1.0;
     group.animations=@[animation,rotation];
+    group.fillMode = kCAFillModeForwards;
+    group.removedOnCompletion = NO;
     [btn.layer addAnimation:group forKey:nil];
     
 }

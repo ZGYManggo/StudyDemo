@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="G1Z-CB-Xdc" customClass="kbToolbar">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+            <animations/>
+            <items>
+                <barButtonItem title="上一个" id="TyL-qk-D9I">
+                    <connections>
+                        <action selector="ItemClick:" destination="G1Z-CB-Xdc" id="5Zc-Qy-amq"/>
+                    </connections>
+                </barButtonItem>
+                <barButtonItem tag="1" title="下一个" id="Sdv-70-4wx">
+                    <connections>
+                        <action selector="ItemClick:" destination="G1Z-CB-Xdc" id="Wb7-ki-0sd"/>
+                    </connections>
+                </barButtonItem>
+                <barButtonItem style="plain" systemItem="flexibleSpace" id="dSV-5M-yCn"/>
+                <barButtonItem tag="2" title="完成" id="z0f-Ub-JkT">
+                    <connections>
+                        <action selector="ItemClick:" destination="G1Z-CB-Xdc" id="5uC-Sg-XWs"/>
+                    </connections>
+                </barButtonItem>
+            </items>
+            <connections>
+                <outlet property="nextItem" destination="Sdv-70-4wx" id="dlq-c7-iPJ"/>
+                <outlet property="previousItem" destination="TyL-qk-D9I" id="bOe-BF-ced"/>
+            </connections>
+            <point key="canvasLocation" x="285.5" y="341"/>
+        </toolbar>
+    </objects>
+</document>
