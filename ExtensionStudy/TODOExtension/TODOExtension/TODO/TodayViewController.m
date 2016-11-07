@@ -50,6 +50,7 @@
         UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 44)];
         [cell.contentView addSubview:btn];
         [btn addTarget:self action:@selector(tappedBtn) forControlEvents:UIControlEventTouchUpInside];
+        return cell;
     }
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     if (!cell) {

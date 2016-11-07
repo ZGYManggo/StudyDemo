@@ -10,6 +10,7 @@
 #import "DataTool.h"
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (nonatomic,strong) UITableView *mainTableView;
+@property (nonatomic,strong) NSMutableArray *dataArr;
 @end
 
 @implementation ViewController
@@ -23,6 +24,8 @@
     self.mainTableView =mainTable;
     UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(tappedAddButton)];
     self.navigationItem.rightBarButtonItem = item;
+    NSArray *arr = [[DataTool shareDataTool]getData];
+    self.dataArr = [NSMutableArray arrayWithArray:arr];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(tappedAddButton) name:@"add" object:nil];
 }
 
@@ -36,6 +39,7 @@
         UITextField *userText = alter.textFields.firstObject;
         dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0), ^{
             [[DataTool shareDataTool]addData:userText.text];
+            [self.dataArr addObject:userText.text];
             dispatch_async(dispatch_get_main_queue(), ^{
                 [self.mainTableView reloadData];
             });
@@ -46,8 +50,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    NSArray *arr = [[DataTool shareDataTool]getData];
-    return arr.count;
+    return self.dataArr.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -55,18 +58,15 @@
     if (!cell) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:@"cell"];
     }
-    NSArray *arr = [[DataTool shareDataTool]getData];
-    cell.textLabel.text = arr[indexPath.row];
+    cell.textLabel.text = (NSString *)self.dataArr[indexPath.row];
     return cell;
 }
 
 -(NSArray<UITableViewRowAction *> *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewRowAction *action = [UITableViewRowAction rowActionWithStyle:UITableViewRowActionStyleDestructive title:@"删除" handler:^(UITableViewRowAction * _Nonnull action, NSIndexPath * _Nonnull indexPath) {
-        NSArray *arr = [[DataTool shareDataTool]getData];
-        NSMutableArray *temp = [NSMutableArray arrayWithArray:arr];
-        [temp removeObjectAtIndex:indexPath.row];
-        [tableView deselectRowAtIndexPath:indexPath animated:YES];
-        [[DataTool shareDataTool]updataData:temp];
+        [self.dataArr removeObjectAtIndex:indexPath.row];
+        [[DataTool shareDataTool]updataData:self.dataArr];
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationLeft];
     }];
     return @[action];
 }
