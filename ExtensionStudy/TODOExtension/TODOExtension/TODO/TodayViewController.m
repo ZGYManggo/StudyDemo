@@ -11,6 +11,7 @@
 #import "DataTool.h"
 @interface TodayViewController () <NCWidgetProviding,UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *thisTable;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *height;
 
 @end
 
@@ -19,8 +20,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.extensionContext.widgetLargestAvailableDisplayMode = NCWidgetDisplayModeExpanded;
 }
+-(void)widgetActiveDisplayModeDidChange:(NCWidgetDisplayMode)activeDisplayMode withMaximumSize:(CGSize)maxSize{
+    NSLog(@"%@",NSStringFromCGSize(maxSize));
+    if (activeDisplayMode == NCWidgetDisplayModeCompact) {
+        self.preferredContentSize = CGSizeMake([UIScreen mainScreen].bounds.size.width, 110);
+    } else {
+        self.preferredContentSize = CGSizeMake([UIScreen mainScreen].bounds.size.width, 300);
+    }
+}
+- (IBAction)tappedBtn:(id)sender {
 
+    self.height.constant += 50;
+    [self.view layoutIfNeeded];
+
+}
+-(void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator{
+    [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+}
 - (void)widgetPerformUpdateWithCompletionHandler:(void (^)(NCUpdateResult))completionHandler {
     // Perform any setup necessary in order to update the view.
     
@@ -44,6 +62,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     NSArray *arr = [[DataTool shareDataTool]getData];
+
     if (!arr.count) {
         UITableViewCell *cell = [[UITableViewCell alloc]init];
         cell.textLabel.text = @"点击添加";
