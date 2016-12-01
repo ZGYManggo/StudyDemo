@@ -27,23 +27,26 @@
 
 - (void)handleGesture:(UIPanGestureRecognizer *)gestureRecognizer {
     CGPoint translation = [gestureRecognizer translationInView:gestureRecognizer.view];
+    NSLog(@"%@",NSStringFromCGRect(gestureRecognizer.view.frame));
     switch (gestureRecognizer.state) {
         case UIGestureRecognizerStateBegan:
             self.interacting = YES;
             [self.presentingVC dismissViewControllerAnimated:YES completion:nil];
             break;
         case UIGestureRecognizerStateChanged: {
-            CGFloat fraction = translation.y / gestureRecognizer.view.frame.size.width;
-           
-            self.shouldComplete = (fraction > 0.5);
+            CGFloat fraction = translation.y / gestureRecognizer.view.frame.size.height;
+            NSLog(@"-----%0.2f",translation.y);
+
+            self.shouldComplete = (fraction > 0.2);
             NSLog(@"%0.2f",fraction);
-            [self updateInteractiveTransition:fraction];
+            CGFloat x = fraction * 0.4f;
+            [self updateInteractiveTransition:x];
             break;
         }
         case UIGestureRecognizerStateEnded:
         case UIGestureRecognizerStateCancelled: {
             self.interacting = NO;
-            if (!self.shouldComplete || gestureRecognizer.state == UIGestureRecognizerStateCancelled) {
+            if (!self.shouldComplete) {
                 [self cancelInteractiveTransition];
             } else {
                 [self finishInteractiveTransition];

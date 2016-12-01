@@ -40,7 +40,7 @@
 
 - (NSArray *)viewControllers{
     if (!_viewControllers) {
-        _viewControllers = [@[ @"PresentOneController", @"MagicMoveController"] copy];
+        _viewControllers = @[ @"PresentOneController", @"MagicMoveController"];
     }
     return _viewControllers;
 }

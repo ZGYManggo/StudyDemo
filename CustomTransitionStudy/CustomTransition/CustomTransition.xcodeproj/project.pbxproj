@@ -23,6 +23,11 @@
 		FE42BEB51DD1AF8E00944783 /* PresentTwoController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BEB41DD1AF8E00944783 /* PresentTwoController.m */; };
 		FE42BEB81DD1AFB000944783 /* PresentTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BEB71DD1AFB000944783 /* PresentTransition.m */; };
 		FE42BEBB1DD1BC9F00944783 /* PresntInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = FE42BEBA1DD1BC9F00944783 /* PresntInteractiveTransition.m */; };
+		FED5EC2B1DEEE06E00B815DA /* MagicMoveController.m in Sources */ = {isa = PBXBuildFile; fileRef = FED5EC2A1DEEE06E00B815DA /* MagicMoveController.m */; };
+		FED5EC2F1DEEE18800B815DA /* MagicMoveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FED5EC2E1DEEE18800B815DA /* MagicMoveCell.m */; };
+		FED5EC321DEEE4B500B815DA /* MagicTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = FED5EC311DEEE4B500B815DA /* MagicTransition.m */; };
+		FED5EC351DEEE88200B815DA /* BigImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = FED5EC341DEEE88200B815DA /* BigImageController.m */; };
+		FED5EC381DEEE9C100B815DA /* UIView+ZgyExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FED5EC371DEEE9C100B815DA /* UIView+ZgyExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +55,16 @@
 		FE42BEB71DD1AFB000944783 /* PresentTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentTransition.m; sourceTree = "<group>"; };
 		FE42BEB91DD1BC9F00944783 /* PresntInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresntInteractiveTransition.h; sourceTree = "<group>"; };
 		FE42BEBA1DD1BC9F00944783 /* PresntInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresntInteractiveTransition.m; sourceTree = "<group>"; };
+		FED5EC291DEEE06E00B815DA /* MagicMoveController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicMoveController.h; sourceTree = "<group>"; };
+		FED5EC2A1DEEE06E00B815DA /* MagicMoveController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicMoveController.m; sourceTree = "<group>"; };
+		FED5EC2D1DEEE18800B815DA /* MagicMoveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicMoveCell.h; sourceTree = "<group>"; };
+		FED5EC2E1DEEE18800B815DA /* MagicMoveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicMoveCell.m; sourceTree = "<group>"; };
+		FED5EC301DEEE4B500B815DA /* MagicTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicTransition.h; sourceTree = "<group>"; };
+		FED5EC311DEEE4B500B815DA /* MagicTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicTransition.m; sourceTree = "<group>"; };
+		FED5EC331DEEE88200B815DA /* BigImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigImageController.h; sourceTree = "<group>"; };
+		FED5EC341DEEE88200B815DA /* BigImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigImageController.m; sourceTree = "<group>"; };
+		FED5EC361DEEE9C100B815DA /* UIView+ZgyExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZgyExtension.h"; sourceTree = "<group>"; };
+		FED5EC371DEEE9C100B815DA /* UIView+ZgyExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZgyExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,11 +97,14 @@
 		FE42BE8B1DD1ADAC00944783 /* CustomTransition */ = {
 			isa = PBXGroup;
 			children = (
+				FED5EC2C1DEEE08000B815DA /* MagicMoveController */,
 				FE42BEAF1DD1AF6000944783 /* PresentOneController */,
 				FE42BE8F1DD1ADAC00944783 /* AppDelegate.h */,
 				FE42BE901DD1ADAC00944783 /* AppDelegate.m */,
 				FE42BE921DD1ADAC00944783 /* ViewController.h */,
 				FE42BE931DD1ADAC00944783 /* ViewController.m */,
+				FED5EC361DEEE9C100B815DA /* UIView+ZgyExtension.h */,
+				FED5EC371DEEE9C100B815DA /* UIView+ZgyExtension.m */,
 				FE42BE951DD1ADAC00944783 /* Main.storyboard */,
 				FE42BE981DD1ADAC00944783 /* Assets.xcassets */,
 				FE42BE9A1DD1ADAC00944783 /* LaunchScreen.storyboard */,
@@ -125,6 +143,21 @@
 			name = PresentOneController;
 			sourceTree = "<group>";
 		};
+		FED5EC2C1DEEE08000B815DA /* MagicMoveController */ = {
+			isa = PBXGroup;
+			children = (
+				FED5EC291DEEE06E00B815DA /* MagicMoveController.h */,
+				FED5EC2A1DEEE06E00B815DA /* MagicMoveController.m */,
+				FED5EC2D1DEEE18800B815DA /* MagicMoveCell.h */,
+				FED5EC2E1DEEE18800B815DA /* MagicMoveCell.m */,
+				FED5EC301DEEE4B500B815DA /* MagicTransition.h */,
+				FED5EC311DEEE4B500B815DA /* MagicTransition.m */,
+				FED5EC331DEEE88200B815DA /* BigImageController.h */,
+				FED5EC341DEEE88200B815DA /* BigImageController.m */,
+			);
+			name = MagicMoveController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,6 +189,7 @@
 				TargetAttributes = {
 					FE42BE881DD1ADAC00944783 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 9837JX8MU6;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -206,9 +240,14 @@
 				FE42BEBB1DD1BC9F00944783 /* PresntInteractiveTransition.m in Sources */,
 				FE42BE941DD1ADAC00944783 /* ViewController.m in Sources */,
 				FE42BE911DD1ADAC00944783 /* AppDelegate.m in Sources */,
+				FED5EC321DEEE4B500B815DA /* MagicTransition.m in Sources */,
+				FED5EC351DEEE88200B815DA /* BigImageController.m in Sources */,
+				FED5EC2F1DEEE18800B815DA /* MagicMoveCell.m in Sources */,
+				FED5EC2B1DEEE06E00B815DA /* MagicMoveController.m in Sources */,
 				FE42BE8E1DD1ADAC00944783 /* main.m in Sources */,
 				FE42BEB81DD1AFB000944783 /* PresentTransition.m in Sources */,
 				FE42BEB51DD1AF8E00944783 /* PresentTwoController.m in Sources */,
+				FED5EC381DEEE9C100B815DA /* UIView+ZgyExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +365,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9837JX8MU6;
 				INFOPLIST_FILE = CustomTransition/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zgy.CustomTransition;
@@ -337,6 +377,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9837JX8MU6;
 				INFOPLIST_FILE = CustomTransition/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zgy.CustomTransition;
@@ -363,6 +404,7 @@
 				FE42BEA21DD1ADAC00944783 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

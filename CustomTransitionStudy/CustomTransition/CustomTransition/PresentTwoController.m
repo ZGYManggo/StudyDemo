@@ -41,6 +41,9 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source{
+    NSLog(@"%@",NSStringFromClass([presented class]));
+    NSLog(@"%@",NSStringFromClass([presenting class]));
+    NSLog(@"%@",NSStringFromClass([source class]));
     return [PresentTransition transitionWithTransitionType:PresentOneTransitionTypePresent];
 }
 
