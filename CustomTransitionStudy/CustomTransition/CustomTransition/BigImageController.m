@@ -10,7 +10,6 @@
 #import "UIView+ZgyExtension.h"
 #import "MagicTransition.h"
 @interface BigImageController ()<UIScrollViewDelegate,UIViewControllerTransitioningDelegate>
-@property (nonatomic,strong) UIScrollView *thisScroll;
 @end
 
 @implementation BigImageController
@@ -25,6 +24,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.thisScroll = [[UIScrollView alloc]initWithFrame:self.view.bounds];
+    self.thisScroll.backgroundColor = [UIColor blackColor];
     [self.view addSubview:self.thisScroll];
     UIImage *image = [UIImage imageNamed:self.imageName];
     UIImageView *bigImg = [[UIImageView alloc]initWithImage:image];
@@ -35,7 +35,7 @@
     bigImg.frame = CGRectMake(10, 0, self.view.zg_width - 20, heigh);
     CGPoint center = bigImg.center;
     center.y =self.view.zg_height  / 2;
-//    bigImg.center = center;
+    bigImg.center = center;
     bigImg.contentMode = UIViewContentModeScaleAspectFit;
     [self.thisScroll addSubview:bigImg];
     self.image = bigImg;

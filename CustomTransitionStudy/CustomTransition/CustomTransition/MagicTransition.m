@@ -67,7 +67,7 @@
 //        toVC.image.hidden = NO;
 //        [transitionContext completeTransition:YES];
 //    }];
-    [UIView animateWithDuration:10 animations:^{
+    [UIView animateWithDuration:0.5 animations:^{
         tempView.frame = [toVC.image convertRect:toVC.image.bounds toView:containerView];
         toVC.view.alpha = 1;
     } completion:^(BOOL finished) {

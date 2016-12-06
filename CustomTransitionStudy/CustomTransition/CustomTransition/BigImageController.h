@@ -11,5 +11,6 @@
 @interface BigImageController : UIViewController
 @property (nonatomic,copy) NSString *imageName;
 @property (nonatomic,strong) UIImageView *image;
+@property (nonatomic,strong) UIScrollView *thisScroll;
 
 @end
