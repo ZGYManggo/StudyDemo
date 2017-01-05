@@ -44,7 +44,7 @@
 #endif
     
     //第一步 先把图片缩小 加快计算速度. 但越小结果误差可能越大
-    CGSize thumbSize = CGSizeMake(20, 20);
+    CGSize thumbSize = CGSizeMake(50, 50);
     
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
     CGContextRef context = CGBitmapContextCreate(NULL,

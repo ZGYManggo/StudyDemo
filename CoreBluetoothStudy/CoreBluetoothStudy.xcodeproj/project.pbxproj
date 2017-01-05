@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FEBA9A2E1E0BCA1B00F56974 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBA9A2D1E0BCA1B00F56974 /* main.m */; };
+		FEBA9A311E0BCA1B00F56974 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBA9A301E0BCA1B00F56974 /* AppDelegate.m */; };
+		FEBA9A391E0BCA1B00F56974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEBA9A381E0BCA1B00F56974 /* Assets.xcassets */; };
+		FEBA9A3C1E0BCA1B00F56974 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEBA9A3A1E0BCA1B00F56974 /* LaunchScreen.storyboard */; };
+		FEBA9A681E0BCCB200F56974 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEBA9A671E0BCCB200F56974 /* CoreBluetooth.framework */; };
+		FEF7E4EC1E1B84020009CA1C /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF7E4EB1E1B84020009CA1C /* ScanViewController.m */; };
+		FEF7E4F01E1B89B10009CA1C /* MyPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF7E4EF1E1B89B10009CA1C /* MyPeripheral.m */; };
+		FEF7E54F1E1CCF350009CA1C /* Barcode.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF7E52B1E1CCF350009CA1C /* Barcode.m */; };
+		FEF7E5501E1CCF350009CA1C /* Code128.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF7E52D1E1CCF350009CA1C /* Code128.m */; };
+		FEF7E5511E1CCF350009CA1C /* ESC.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF7E52F1E1CCF350009CA1C /* ESC.m */; };
+		FEF7E5521E1CCF350009CA1C /* ESCBase.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF7E5311E1CCF350009CA1C /* ESCBase.m */; };
+		FEF7E5531E1CCF350009CA1C /* Graphic.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF7E5331E1CCF350009CA1C /* Graphic.m */; };
+		FEF7E5541E1CCF350009CA1C /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF7E5351E1CCF350009CA1C /* Image.m */; };
+		FEF7E5551E1CCF350009CA1C /* ImageConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF7E5371E1CCF350009CA1C /* ImageConvert.m */; };
+		FEF7E5561E1CCF350009CA1C /* JPL.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF7E5391E1CCF350009CA1C /* JPL.m */; };
+		FEF7E5571E1CCF350009CA1C /* JPLBarcode.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF7E53B1E1CCF350009CA1C /* JPLBarcode.m */; };
+		FEF7E5581E1CCF350009CA1C /* JPLBase.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF7E53D1E1CCF350009CA1C /* JPLBase.m */; };
+		FEF7E5591E1CCF350009CA1C /* JPLGraphic.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF7E53F1E1CCF350009CA1C /* JPLGraphic.m */; };
+		FEF7E55A1E1CCF350009CA1C /* JPLImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF7E5411E1CCF350009CA1C /* JPLImage.m */; };
+		FEF7E55B1E1CCF350009CA1C /* JPLText.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF7E5431E1CCF350009CA1C /* JPLText.m */; };
+		FEF7E55C1E1CCF350009CA1C /* Page.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF7E5451E1CCF350009CA1C /* Page.m */; };
+		FEF7E55D1E1CCF350009CA1C /* Printer.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF7E5471E1CCF350009CA1C /* Printer.m */; };
+		FEF7E55E1E1CCF350009CA1C /* PrinterInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF7E5491E1CCF350009CA1C /* PrinterInfo.m */; };
+		FEF7E55F1E1CCF350009CA1C /* Text.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF7E54C1E1CCF350009CA1C /* Text.m */; };
+		FEF7E5601E1CCF350009CA1C /* WrapDatas.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF7E54E1E1CCF350009CA1C /* WrapDatas.m */; };
+		FEF7E5641E1CD6760009CA1C /* PrintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF7E5631E1CD6760009CA1C /* PrintViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FEBA9A291E0BCA1B00F56974 /* CoreBluetoothStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreBluetoothStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEBA9A2D1E0BCA1B00F56974 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FEBA9A2F1E0BCA1B00F56974 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FEBA9A301E0BCA1B00F56974 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FEBA9A381E0BCA1B00F56974 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FEBA9A3B1E0BCA1B00F56974 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FEBA9A3D1E0BCA1B00F56974 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEBA9A671E0BCCB200F56974 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		FEF7E4EA1E1B84020009CA1C /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
+		FEF7E4EB1E1B84020009CA1C /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
+		FEF7E4EE1E1B89B10009CA1C /* MyPeripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPeripheral.h; sourceTree = "<group>"; };
+		FEF7E4EF1E1B89B10009CA1C /* MyPeripheral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPeripheral.m; sourceTree = "<group>"; };
+		FEF7E52A1E1CCF350009CA1C /* Barcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Barcode.h; sourceTree = "<group>"; };
+		FEF7E52B1E1CCF350009CA1C /* Barcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Barcode.m; sourceTree = "<group>"; };
+		FEF7E52C1E1CCF350009CA1C /* Code128.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Code128.h; sourceTree = "<group>"; };
+		FEF7E52D1E1CCF350009CA1C /* Code128.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Code128.m; sourceTree = "<group>"; };
+		FEF7E52E1E1CCF350009CA1C /* ESC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESC.h; sourceTree = "<group>"; };
+		FEF7E52F1E1CCF350009CA1C /* ESC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESC.m; sourceTree = "<group>"; };
+		FEF7E5301E1CCF350009CA1C /* ESCBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESCBase.h; sourceTree = "<group>"; };
+		FEF7E5311E1CCF350009CA1C /* ESCBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESCBase.m; sourceTree = "<group>"; };
+		FEF7E5321E1CCF350009CA1C /* Graphic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Graphic.h; sourceTree = "<group>"; };
+		FEF7E5331E1CCF350009CA1C /* Graphic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Graphic.m; sourceTree = "<group>"; };
+		FEF7E5341E1CCF350009CA1C /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		FEF7E5351E1CCF350009CA1C /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
+		FEF7E5361E1CCF350009CA1C /* ImageConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageConvert.h; sourceTree = "<group>"; };
+		FEF7E5371E1CCF350009CA1C /* ImageConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageConvert.m; sourceTree = "<group>"; };
+		FEF7E5381E1CCF350009CA1C /* JPL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPL.h; sourceTree = "<group>"; };
+		FEF7E5391E1CCF350009CA1C /* JPL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPL.m; sourceTree = "<group>"; };
+		FEF7E53A1E1CCF350009CA1C /* JPLBarcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPLBarcode.h; sourceTree = "<group>"; };
+		FEF7E53B1E1CCF350009CA1C /* JPLBarcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPLBarcode.m; sourceTree = "<group>"; };
+		FEF7E53C1E1CCF350009CA1C /* JPLBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPLBase.h; sourceTree = "<group>"; };
+		FEF7E53D1E1CCF350009CA1C /* JPLBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPLBase.m; sourceTree = "<group>"; };
+		FEF7E53E1E1CCF350009CA1C /* JPLGraphic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPLGraphic.h; sourceTree = "<group>"; };
+		FEF7E53F1E1CCF350009CA1C /* JPLGraphic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPLGraphic.m; sourceTree = "<group>"; };
+		FEF7E5401E1CCF350009CA1C /* JPLImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPLImage.h; sourceTree = "<group>"; };
+		FEF7E5411E1CCF350009CA1C /* JPLImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPLImage.m; sourceTree = "<group>"; };
+		FEF7E5421E1CCF350009CA1C /* JPLText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPLText.h; sourceTree = "<group>"; };
+		FEF7E5431E1CCF350009CA1C /* JPLText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPLText.m; sourceTree = "<group>"; };
+		FEF7E5441E1CCF350009CA1C /* Page.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page.h; sourceTree = "<group>"; };
+		FEF7E5451E1CCF350009CA1C /* Page.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page.m; sourceTree = "<group>"; };
+		FEF7E5461E1CCF350009CA1C /* Printer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Printer.h; sourceTree = "<group>"; };
+		FEF7E5471E1CCF350009CA1C /* Printer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Printer.m; sourceTree = "<group>"; };
+		FEF7E5481E1CCF350009CA1C /* PrinterInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrinterInfo.h; sourceTree = "<group>"; };
+		FEF7E5491E1CCF350009CA1C /* PrinterInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrinterInfo.m; sourceTree = "<group>"; };
+		FEF7E54B1E1CCF350009CA1C /* Text.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Text.h; sourceTree = "<group>"; };
+		FEF7E54C1E1CCF350009CA1C /* Text.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Text.m; sourceTree = "<group>"; };
+		FEF7E54D1E1CCF350009CA1C /* WrapDatas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WrapDatas.h; sourceTree = "<group>"; };
+		FEF7E54E1E1CCF350009CA1C /* WrapDatas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WrapDatas.m; sourceTree = "<group>"; };
+		FEF7E5611E1CD08D0009CA1C /* PrinterType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrinterType.h; sourceTree = "<group>"; };
+		FEF7E5621E1CD6760009CA1C /* PrintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintViewController.h; sourceTree = "<group>"; };
+		FEF7E5631E1CD6760009CA1C /* PrintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FEBA9A261E0BCA1B00F56974 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEBA9A681E0BCCB200F56974 /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FEBA9A201E0BCA1B00F56974 = {
+			isa = PBXGroup;
+			children = (
+				FEBA9A2B1E0BCA1B00F56974 /* CoreBluetoothStudy */,
+				FEBA9A2A1E0BCA1B00F56974 /* Products */,
+				FEBA9A661E0BCCB200F56974 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FEBA9A2A1E0BCA1B00F56974 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEBA9A291E0BCA1B00F56974 /* CoreBluetoothStudy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEBA9A2B1E0BCA1B00F56974 /* CoreBluetoothStudy */ = {
+			isa = PBXGroup;
+			children = (
+				FEF7E5291E1CCF350009CA1C /* Printer */,
+				FEF7E4ED1E1B898B0009CA1C /* MyPeripheral */,
+				FEF7E4EA1E1B84020009CA1C /* ScanViewController.h */,
+				FEF7E4EB1E1B84020009CA1C /* ScanViewController.m */,
+				FEBA9A2F1E0BCA1B00F56974 /* AppDelegate.h */,
+				FEBA9A301E0BCA1B00F56974 /* AppDelegate.m */,
+				FEBA9A381E0BCA1B00F56974 /* Assets.xcassets */,
+				FEBA9A3A1E0BCA1B00F56974 /* LaunchScreen.storyboard */,
+				FEBA9A3D1E0BCA1B00F56974 /* Info.plist */,
+				FEBA9A2C1E0BCA1B00F56974 /* Supporting Files */,
+				FEF7E5621E1CD6760009CA1C /* PrintViewController.h */,
+				FEF7E5631E1CD6760009CA1C /* PrintViewController.m */,
+			);
+			path = CoreBluetoothStudy;
+			sourceTree = "<group>";
+		};
+		FEBA9A2C1E0BCA1B00F56974 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEBA9A2D1E0BCA1B00F56974 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FEBA9A661E0BCCB200F56974 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FEBA9A671E0BCCB200F56974 /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEF7E4ED1E1B898B0009CA1C /* MyPeripheral */ = {
+			isa = PBXGroup;
+			children = (
+				FEF7E4EE1E1B89B10009CA1C /* MyPeripheral.h */,
+				FEF7E4EF1E1B89B10009CA1C /* MyPeripheral.m */,
+			);
+			name = MyPeripheral;
+			sourceTree = "<group>";
+		};
+		FEF7E5291E1CCF350009CA1C /* Printer */ = {
+			isa = PBXGroup;
+			children = (
+				FEF7E52A1E1CCF350009CA1C /* Barcode.h */,
+				FEF7E52B1E1CCF350009CA1C /* Barcode.m */,
+				FEF7E52C1E1CCF350009CA1C /* Code128.h */,
+				FEF7E52D1E1CCF350009CA1C /* Code128.m */,
+				FEF7E52E1E1CCF350009CA1C /* ESC.h */,
+				FEF7E52F1E1CCF350009CA1C /* ESC.m */,
+				FEF7E5301E1CCF350009CA1C /* ESCBase.h */,
+				FEF7E5311E1CCF350009CA1C /* ESCBase.m */,
+				FEF7E5321E1CCF350009CA1C /* Graphic.h */,
+				FEF7E5331E1CCF350009CA1C /* Graphic.m */,
+				FEF7E5341E1CCF350009CA1C /* Image.h */,
+				FEF7E5351E1CCF350009CA1C /* Image.m */,
+				FEF7E5361E1CCF350009CA1C /* ImageConvert.h */,
+				FEF7E5371E1CCF350009CA1C /* ImageConvert.m */,
+				FEF7E5381E1CCF350009CA1C /* JPL.h */,
+				FEF7E5391E1CCF350009CA1C /* JPL.m */,
+				FEF7E53A1E1CCF350009CA1C /* JPLBarcode.h */,
+				FEF7E53B1E1CCF350009CA1C /* JPLBarcode.m */,
+				FEF7E53C1E1CCF350009CA1C /* JPLBase.h */,
+				FEF7E53D1E1CCF350009CA1C /* JPLBase.m */,
+				FEF7E53E1E1CCF350009CA1C /* JPLGraphic.h */,
+				FEF7E53F1E1CCF350009CA1C /* JPLGraphic.m */,
+				FEF7E5401E1CCF350009CA1C /* JPLImage.h */,
+				FEF7E5411E1CCF350009CA1C /* JPLImage.m */,
+				FEF7E5421E1CCF350009CA1C /* JPLText.h */,
+				FEF7E5431E1CCF350009CA1C /* JPLText.m */,
+				FEF7E5441E1CCF350009CA1C /* Page.h */,
+				FEF7E5451E1CCF350009CA1C /* Page.m */,
+				FEF7E5461E1CCF350009CA1C /* Printer.h */,
+				FEF7E5471E1CCF350009CA1C /* Printer.m */,
+				FEF7E5481E1CCF350009CA1C /* PrinterInfo.h */,
+				FEF7E5491E1CCF350009CA1C /* PrinterInfo.m */,
+				FEF7E54B1E1CCF350009CA1C /* Text.h */,
+				FEF7E54C1E1CCF350009CA1C /* Text.m */,
+				FEF7E54D1E1CCF350009CA1C /* WrapDatas.h */,
+				FEF7E54E1E1CCF350009CA1C /* WrapDatas.m */,
+				FEF7E5611E1CD08D0009CA1C /* PrinterType.h */,
+			);
+			path = Printer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FEBA9A281E0BCA1B00F56974 /* CoreBluetoothStudy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEBA9A401E0BCA1B00F56974 /* Build configuration list for PBXNativeTarget "CoreBluetoothStudy" */;
+			buildPhases = (
+				FEBA9A251E0BCA1B00F56974 /* Sources */,
+				FEBA9A261E0BCA1B00F56974 /* Frameworks */,
+				FEBA9A271E0BCA1B00F56974 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreBluetoothStudy;
+			productName = CoreBluetoothStudy;
+			productReference = FEBA9A291E0BCA1B00F56974 /* CoreBluetoothStudy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEBA9A211E0BCA1B00F56974 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "张高远";
+				TargetAttributes = {
+					FEBA9A281E0BCA1B00F56974 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9837JX8MU6;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FEBA9A241E0BCA1B00F56974 /* Build configuration list for PBXProject "CoreBluetoothStudy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FEBA9A201E0BCA1B00F56974;
+			productRefGroup = FEBA9A2A1E0BCA1B00F56974 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEBA9A281E0BCA1B00F56974 /* CoreBluetoothStudy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FEBA9A271E0BCA1B00F56974 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEBA9A3C1E0BCA1B00F56974 /* LaunchScreen.storyboard in Resources */,
+				FEBA9A391E0BCA1B00F56974 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FEBA9A251E0BCA1B00F56974 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEBA9A311E0BCA1B00F56974 /* AppDelegate.m in Sources */,
+				FEF7E5531E1CCF350009CA1C /* Graphic.m in Sources */,
+				FEF7E55D1E1CCF350009CA1C /* Printer.m in Sources */,
+				FEF7E5511E1CCF350009CA1C /* ESC.m in Sources */,
+				FEF7E5521E1CCF350009CA1C /* ESCBase.m in Sources */,
+				FEF7E5551E1CCF350009CA1C /* ImageConvert.m in Sources */,
+				FEF7E55B1E1CCF350009CA1C /* JPLText.m in Sources */,
+				FEF7E5581E1CCF350009CA1C /* JPLBase.m in Sources */,
+				FEF7E55F1E1CCF350009CA1C /* Text.m in Sources */,
+				FEF7E55E1E1CCF350009CA1C /* PrinterInfo.m in Sources */,
+				FEBA9A2E1E0BCA1B00F56974 /* main.m in Sources */,
+				FEF7E5591E1CCF350009CA1C /* JPLGraphic.m in Sources */,
+				FEF7E5561E1CCF350009CA1C /* JPL.m in Sources */,
+				FEF7E5641E1CD6760009CA1C /* PrintViewController.m in Sources */,
+				FEF7E54F1E1CCF350009CA1C /* Barcode.m in Sources */,
+				FEF7E4EC1E1B84020009CA1C /* ScanViewController.m in Sources */,
+				FEF7E55C1E1CCF350009CA1C /* Page.m in Sources */,
+				FEF7E5501E1CCF350009CA1C /* Code128.m in Sources */,
+				FEF7E5571E1CCF350009CA1C /* JPLBarcode.m in Sources */,
+				FEF7E4F01E1B89B10009CA1C /* MyPeripheral.m in Sources */,
+				FEF7E55A1E1CCF350009CA1C /* JPLImage.m in Sources */,
+				FEF7E5541E1CCF350009CA1C /* Image.m in Sources */,
+				FEF7E5601E1CCF350009CA1C /* WrapDatas.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FEBA9A3A1E0BCA1B00F56974 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEBA9A3B1E0BCA1B00F56974 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FEBA9A3E1E0BCA1B00F56974 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FEBA9A3F1E0BCA1B00F56974 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FEBA9A411E0BCA1B00F56974 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9837JX8MU6;
+				INFOPLIST_FILE = CoreBluetoothStudy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zgy.;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FEBA9A421E0BCA1B00F56974 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9837JX8MU6;
+				INFOPLIST_FILE = CoreBluetoothStudy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zgy.;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FEBA9A241E0BCA1B00F56974 /* Build configuration list for PBXProject "CoreBluetoothStudy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEBA9A3E1E0BCA1B00F56974 /* Debug */,
+				FEBA9A3F1E0BCA1B00F56974 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEBA9A401E0BCA1B00F56974 /* Build configuration list for PBXNativeTarget "CoreBluetoothStudy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEBA9A411E0BCA1B00F56974 /* Debug */,
+				FEBA9A421E0BCA1B00F56974 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FEBA9A211E0BCA1B00F56974 /* Project object */;
+}

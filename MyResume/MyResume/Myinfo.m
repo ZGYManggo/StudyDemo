@@ -50,7 +50,7 @@
         if(indexPath.row==0){
             UIStoryboard *secondStoryBoard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
             UIViewController *viewcontroller2 = [secondStoryBoard instantiateInitialViewController];
-            viewcontroller2.modalTransitionStyle=UIModalTransitionStyleFlipHorizontal;
+            viewcontroller2.modalTransitionStyle=UIModalTransitionStyleCrossDissolve;
            [self presentViewController:viewcontroller2 animated:YES completion:nil];
         }
         else if(indexPath.row==1){
