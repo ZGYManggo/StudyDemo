@@ -95,12 +95,14 @@
 //             [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
            NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:0.1 repeats:YES block:^(NSTimer * _Nonnull timer) {
                  if (circle.strokeEnd <1) {
-                     circle.strokeEnd +=0.01;
+                     circle.strokeEnd +=0.1;
                      
+                 }else{
+                     [timer invalidate];
                  }
              }];
              [timer fire];
-             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                  for (UIView *view in self.login.subviews) {
                      [view removeFromSuperview];
                  }

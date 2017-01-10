@@ -125,14 +125,14 @@
 				FEF7E4ED1E1B898B0009CA1C /* MyPeripheral */,
 				FEF7E4EA1E1B84020009CA1C /* ScanViewController.h */,
 				FEF7E4EB1E1B84020009CA1C /* ScanViewController.m */,
+				FEF7E5621E1CD6760009CA1C /* PrintViewController.h */,
+				FEF7E5631E1CD6760009CA1C /* PrintViewController.m */,
 				FEBA9A2F1E0BCA1B00F56974 /* AppDelegate.h */,
 				FEBA9A301E0BCA1B00F56974 /* AppDelegate.m */,
 				FEBA9A381E0BCA1B00F56974 /* Assets.xcassets */,
 				FEBA9A3A1E0BCA1B00F56974 /* LaunchScreen.storyboard */,
 				FEBA9A3D1E0BCA1B00F56974 /* Info.plist */,
 				FEBA9A2C1E0BCA1B00F56974 /* Supporting Files */,
-				FEF7E5621E1CD6760009CA1C /* PrintViewController.h */,
-				FEF7E5631E1CD6760009CA1C /* PrintViewController.m */,
 			);
 			path = CoreBluetoothStudy;
 			sourceTree = "<group>";

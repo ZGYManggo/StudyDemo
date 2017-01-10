@@ -48,9 +48,9 @@
     // 卫生行政执法文书
     //    [self.printer.esc.image drawOut:32 y:0 imageWidthDots:106 imageHeightDots:106 mode:IMAGE_ENLARGE_NORMAL imageData:logo_data];
     //    [self.printer.esc.text drawOut:150 y:29 height:x24 bold:TRUE enlarge:TEXT_ENLARGE_HEIGHT_WIDTH_DOUBLE text:@"卫生行政执法文书"];
-    for (int i = 0; i < 10; i++) {//测试发现是线的厚度
-//        [self.printer.esc.grahic linedrawOut:0 endPoint:575];
-    }
+//    for (int i = 0; i < 10; i++) {//测试发现是线的厚度
+        [self.printer.esc.grahic linedrawOut:0 endPoint:575];
+//    }
 //    [self.printer.esc feedDots:4];
 //
     [self.printer.esc.text drawOut:CENTER height:x24 bold:TRUE enlarge:TEXT_ENLARGE_NORMAL text:@"现场检测笔录"];
