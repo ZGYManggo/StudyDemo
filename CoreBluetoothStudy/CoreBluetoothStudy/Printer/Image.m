@@ -185,7 +185,7 @@ imageHeightDot:(int)imageHeightDots mode:(IMAGE_ENLARGE)mode imageData:(char*)im
 {
     int width = bitmap.size.width;
     int height = bitmap.size.height;
-    int canvasMaxHeight=0;
+    int canvasMaxHeight=200;
     if (width > self.printInfo.escPageWidth)// || height > this.canvasMaxHeight)
     {
         return false;
@@ -198,14 +198,14 @@ imageHeightDot:(int)imageHeightDots mode:(IMAGE_ENLARGE)mode imageData:(char*)im
     conver=[[ImageConvert alloc]init];
     Byte*data=[conver CovertImageVertical:bitmap type:128 type:8];
     
-    if (data == NULL)
+//    if (data == NULL)
 //    free(conver);
-    free(data);
-    return false;
+//    free(data);
+//    return false;
 //    if(![self setXY:x y:y])
 //    free(conver);
-    free(data);
-    return false;
+//    free(data);
+//    return false;
     return [self _drawOut:width imageHeightDots:height mode:IMAGE_ENLARGE_NORMAL imageData:data];
 
 }

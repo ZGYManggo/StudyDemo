@@ -15,7 +15,7 @@
     Byte* cmd;
 }
 -(BOOL)linedrawOut:(int)startPoint endPoint:(int)endPoint;
-
+- (BOOL)lineDrawOutX:(int)x Y:(int)y;
 
 
 

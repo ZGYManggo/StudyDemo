@@ -16,5 +16,4 @@ typedef NS_ENUM(NSInteger,connectStaus){
 @interface MyPeripheral : NSObject
 @property (nonatomic,strong) CBPeripheral *peripheral;
 @property (nonatomic,assign) connectStaus connectStaus;
-
 @end

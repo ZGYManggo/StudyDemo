@@ -18,7 +18,7 @@
 @property(assign)int m_datasize;
 
 -(Byte*)CovertImageVertical:(UIImage*)bitmap type:(int)gray_threshold type:(int)column_dots;
--(Byte)CovertImageHorizontal:(UIImage*)bitmap gray_threshold:(int)gray_threshold;
+-(Byte*)CovertImageHorizontal:(UIImage*)bitmap gray_threshold:(int)gray_threshold;
 -(Boolean) PixelIsBlack:(int)color type:(int)gray_threshold;
 - (UIColor*) getRGB:(int)x type:(int)y;
 

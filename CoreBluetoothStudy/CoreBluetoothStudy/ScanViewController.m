@@ -10,6 +10,7 @@
 #import <CoreBluetooth/CoreBluetooth.h>
 #import "MyPeripheral.h"
 #import "PrintViewController.h"
+
 static NSString *const peripheralKey = @"peripheral";
 @interface ScanViewController ()<CBCentralManagerDelegate,CBPeripheralDelegate,UITableViewDataSource,UITableViewDelegate,PrintViewControllerDelegate>
 {
@@ -34,8 +35,29 @@ static NSString *const peripheralKey = @"peripheral";
     self.thisTable.dataSource = self;
     self.thisTable.delegate = self;
     [self.view addSubview:self.thisTable];
+    char* postData = "TEST";
+    NSData* data = [NSData dataWithBytes:postData length:strlen(postData)];
+    NSLog(@"%@", data);
+    char* bu=(char *)[data bytes];
+    NSLog(@"%s", bu);
+    
 }
-
+//int main(){
+//    FILE *fp;
+//    char str[10000+1];
+//    if( (fp=fopen("d:\\demo.txt","rt")) == NULL ){
+//        printf("Cannot open file, press any key to exit!\n");
+////        getch();
+//        exit(1);
+//    }
+//    
+//    while(fgets(str, 10000, fp) != NULL){
+//        printf("%s", str);
+//    }
+//    fclose(fp);
+//    system("pause");
+//    return 0;
+//}
 - (void)storeMyPeripheral: (CBPeripheral *)aPeripheral {
     MyPeripheral *myPeripheral = nil;
     bool b = FALSE;

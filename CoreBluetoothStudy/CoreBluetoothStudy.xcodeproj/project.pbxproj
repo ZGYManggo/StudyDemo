@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE7611FC1E2DBA970068CFDD /* UIImage+Bitmap.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7611FB1E2DBA970068CFDD /* UIImage+Bitmap.m */; };
+		FEB802681E2C9E3500D66099 /* PrintLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = FEB802671E2C9E3500D66099 /* PrintLogo.png */; };
 		FEBA9A2E1E0BCA1B00F56974 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBA9A2D1E0BCA1B00F56974 /* main.m */; };
 		FEBA9A311E0BCA1B00F56974 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBA9A301E0BCA1B00F56974 /* AppDelegate.m */; };
 		FEBA9A391E0BCA1B00F56974 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEBA9A381E0BCA1B00F56974 /* Assets.xcassets */; };
@@ -36,6 +38,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE7611FA1E2DBA970068CFDD /* UIImage+Bitmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Bitmap.h"; sourceTree = "<group>"; };
+		FE7611FB1E2DBA970068CFDD /* UIImage+Bitmap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Bitmap.m"; sourceTree = "<group>"; };
+		FEB802671E2C9E3500D66099 /* PrintLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PrintLogo.png; sourceTree = "<group>"; };
 		FEBA9A291E0BCA1B00F56974 /* CoreBluetoothStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreBluetoothStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEBA9A2D1E0BCA1B00F56974 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FEBA9A2F1E0BCA1B00F56974 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -127,8 +132,11 @@
 				FEF7E4EB1E1B84020009CA1C /* ScanViewController.m */,
 				FEF7E5621E1CD6760009CA1C /* PrintViewController.h */,
 				FEF7E5631E1CD6760009CA1C /* PrintViewController.m */,
+				FE7611FA1E2DBA970068CFDD /* UIImage+Bitmap.h */,
+				FE7611FB1E2DBA970068CFDD /* UIImage+Bitmap.m */,
 				FEBA9A2F1E0BCA1B00F56974 /* AppDelegate.h */,
 				FEBA9A301E0BCA1B00F56974 /* AppDelegate.m */,
+				FEB802671E2C9E3500D66099 /* PrintLogo.png */,
 				FEBA9A381E0BCA1B00F56974 /* Assets.xcassets */,
 				FEBA9A3A1E0BCA1B00F56974 /* LaunchScreen.storyboard */,
 				FEBA9A3D1E0BCA1B00F56974 /* Info.plist */,
@@ -265,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEB802681E2C9E3500D66099 /* PrintLogo.png in Resources */,
 				FEBA9A3C1E0BCA1B00F56974 /* LaunchScreen.storyboard in Resources */,
 				FEBA9A391E0BCA1B00F56974 /* Assets.xcassets in Resources */,
 			);
@@ -281,6 +290,7 @@
 				FEF7E5531E1CCF350009CA1C /* Graphic.m in Sources */,
 				FEF7E55D1E1CCF350009CA1C /* Printer.m in Sources */,
 				FEF7E5511E1CCF350009CA1C /* ESC.m in Sources */,
+				FE7611FC1E2DBA970068CFDD /* UIImage+Bitmap.m in Sources */,
 				FEF7E5521E1CCF350009CA1C /* ESCBase.m in Sources */,
 				FEF7E5551E1CCF350009CA1C /* ImageConvert.m in Sources */,
 				FEF7E55B1E1CCF350009CA1C /* JPLText.m in Sources */,

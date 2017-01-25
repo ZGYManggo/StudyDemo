@@ -122,7 +122,7 @@
 /// <param name="bitmap">图像@param
 /// <param name="gray_threshold">阈值@param
 /// <returns>null表示失败，否则返回数据数组</returns>
--(Byte)CovertImageHorizontal:(UIImage*)bitmap gray_threshold:(int)gray_threshold
+-(Byte *)CovertImageHorizontal:(UIImage*)bitmap gray_threshold:(int)gray_threshold
 {
     self.m_width = bitmap.size.width;
     self.m_height = bitmap.size.height;

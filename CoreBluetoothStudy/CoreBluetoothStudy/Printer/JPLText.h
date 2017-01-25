@@ -31,7 +31,7 @@ typedef NS_ENUM(Byte, ROTATE)
 
 -(BOOL)drawOut:(ALIGN)align y:(int)y text:(NSString*)text fontHeight:(int)fontHeight bold:(Boolean)bold reverse:(Boolean)reverse underLine:(Boolean)underLine deletLine:(Boolean)deleteLine enlargeX:(JPL_TEXT_ENLARGE)enlargeX enlargeY:(JPL_TEXT_ENLARGE)enlargeY rotateAngle:(ROTATE)rotateAngle;
 
-
+-(BOOL)drawOut:(int)x y:(int)y text:(NSString*)text fontHeight:(int)fontHeight bold:(Boolean)bold reverse:(Boolean)reverse underLien:(Boolean)underLine deleteLine:(Boolean)deleteLine enlargeX:(JPL_TEXT_ENLARGE)enlargeX enlargeY:(JPL_TEXT_ENLARGE)enlargeY rotateAngle:(ROTATE)rotateAngle;
 
 
 @end

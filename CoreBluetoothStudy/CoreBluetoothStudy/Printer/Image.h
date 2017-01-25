@@ -39,5 +39,6 @@ typedef NS_ENUM(Byte, IMAGE_ENLARGE)
 
 -(BOOL) printOutOneLine:(Byte*)data dataLength:(int)dataLenght;
 -(BOOL) drawOut:(int)x y:(int)y imageWidthDots:(int)imageWidthDots imageHeightDots:(int)imageHeightDots mode:(IMAGE_ENLARGE)mode imageData:(Byte*)imageData;
+-(BOOL)drawOut:(int)x y:(int)y bitmap:(UIImage*)bitmap;
 
 @end
